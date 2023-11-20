@@ -1,6 +1,6 @@
 # RESTful API using go lang
 
-This repo is using the [go](https://go.dev/) programming lanuage and the [Adventure Works](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms) sample database to create a RESTful api.
+This repo is using the [go](https://go.dev/) programming lanuage and the [Adventure Works](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms) sample database to create a RESTful API.
 
 # Prerequisites
 
@@ -105,6 +105,6 @@ JOIN Person.CountryRegion ON Person.StateProvince.CountryRegionCode = Person.Cou
 WHERE  Person.CountryRegion.CountryRegionCode = '{COUNTRY CODE}';
 ```
 
-**Note:** {COUNTRY CODE} in the above sql query is a [two letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
+**Note:** {COUNTRY CODE} in the above SQL query is a [two letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)
 
 Navigating to 'localhost:3000/country/CA' will only return people from Canada.
